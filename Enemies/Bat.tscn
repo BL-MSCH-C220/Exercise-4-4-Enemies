@@ -1,0 +1,260 @@
+[gd_scene load_steps=36 format=3 uid="uid://c3tf31w2kdtx1"]
+
+[ext_resource type="Texture2D" uid="uid://b4qe04us7ia2t" path="res://Assets/bat_move.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://bge2w414lirjr" path="res://Assets/bat_attack.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://de3ah5l1x2cpw" path="res://Assets/bat_die.png" id="4"]
+
+[sub_resource type="AtlasTexture" id="64"]
+atlas = ExtResource("3")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="65"]
+atlas = ExtResource("3")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="66"]
+atlas = ExtResource("3")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="67"]
+atlas = ExtResource("3")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="68"]
+atlas = ExtResource("3")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="69"]
+atlas = ExtResource("3")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="70"]
+atlas = ExtResource("3")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="71"]
+atlas = ExtResource("3")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="72"]
+atlas = ExtResource("3")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="73"]
+atlas = ExtResource("3")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="74"]
+atlas = ExtResource("4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="75"]
+atlas = ExtResource("4")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="76"]
+atlas = ExtResource("4")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="77"]
+atlas = ExtResource("4")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="78"]
+atlas = ExtResource("4")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="79"]
+atlas = ExtResource("4")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="80"]
+atlas = ExtResource("4")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="81"]
+atlas = ExtResource("4")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="82"]
+atlas = ExtResource("4")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="83"]
+atlas = ExtResource("4")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="54"]
+atlas = ExtResource("1")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="55"]
+atlas = ExtResource("1")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="56"]
+atlas = ExtResource("1")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="57"]
+atlas = ExtResource("1")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="58"]
+atlas = ExtResource("1")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="59"]
+atlas = ExtResource("1")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="60"]
+atlas = ExtResource("1")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="61"]
+atlas = ExtResource("1")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="62"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("64")
+}, {
+"duration": 1.0,
+"texture": SubResource("65")
+}, {
+"duration": 1.0,
+"texture": SubResource("66")
+}, {
+"duration": 1.0,
+"texture": SubResource("67")
+}, {
+"duration": 1.0,
+"texture": SubResource("68")
+}, {
+"duration": 1.0,
+"texture": SubResource("69")
+}, {
+"duration": 1.0,
+"texture": SubResource("70")
+}, {
+"duration": 1.0,
+"texture": SubResource("71")
+}, {
+"duration": 1.0,
+"texture": SubResource("72")
+}, {
+"duration": 1.0,
+"texture": SubResource("73")
+}],
+"loop": false,
+"name": &"Attacking",
+"speed": 60.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("74")
+}, {
+"duration": 1.0,
+"texture": SubResource("75")
+}, {
+"duration": 1.0,
+"texture": SubResource("76")
+}, {
+"duration": 1.0,
+"texture": SubResource("77")
+}, {
+"duration": 1.0,
+"texture": SubResource("78")
+}, {
+"duration": 1.0,
+"texture": SubResource("79")
+}, {
+"duration": 1.0,
+"texture": SubResource("80")
+}, {
+"duration": 1.0,
+"texture": SubResource("81")
+}, {
+"duration": 1.0,
+"texture": SubResource("82")
+}, {
+"duration": 1.0,
+"texture": SubResource("83")
+}],
+"loop": false,
+"name": &"Dying",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("54")
+}, {
+"duration": 1.0,
+"texture": SubResource("55")
+}, {
+"duration": 1.0,
+"texture": SubResource("56")
+}, {
+"duration": 1.0,
+"texture": SubResource("57")
+}, {
+"duration": 1.0,
+"texture": SubResource("58")
+}, {
+"duration": 1.0,
+"texture": SubResource("59")
+}, {
+"duration": 1.0,
+"texture": SubResource("60")
+}, {
+"duration": 1.0,
+"texture": SubResource("61")
+}],
+"loop": true,
+"name": &"Moving",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="53"]
+size = Vector2(120, 77)
+
+[sub_resource type="CircleShape2D" id="63"]
+radius = 72.0
+
+[sub_resource type="RectangleShape2D" id="84"]
+size = Vector2(120, 32)
+
+[node name="Bat" type="CharacterBody2D"]
+position = Vector2(1, 4)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5, 5)
+sprite_frames = SubResource("62")
+animation = &"Attacking"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 2.5)
+shape = SubResource("53")
+
+[node name="See" type="RayCast2D" parent="."]
+target_position = Vector2(2.08165e-12, 1000)
+
+[node name="Attack" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Attack"]
+position = Vector2(-6, 0)
+shape = SubResource("63")
+
+[node name="Timer" type="Timer" parent="Attack"]
+one_shot = true
+
+[node name="Above_and_Below" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Above_and_Below"]
+position = Vector2(-5, -52)
+shape = SubResource("84")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

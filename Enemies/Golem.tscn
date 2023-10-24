@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://cye7bc32e7aer"]
+
+[ext_resource type="Script" path="res://StateMachine/StateMachine.gd" id="4"]
+[ext_resource type="Script" path="res://Enemies/Golem.gd" id="5"]
+[ext_resource type="Script" path="res://Enemies/Golem_Die.gd" id="6"]
+[ext_resource type="Script" path="res://Enemies/Golem_Move.gd" id="7"]
+[ext_resource type="Script" path="res://Enemies/Golem_Attack.gd" id="8"]
+
+[sub_resource type="RectangleShape2D" id="53"]
+size = Vector2(150, 190)
+
+[sub_resource type="RectangleShape2D" id="54"]
+size = Vector2(150, 20)
+
+[node name="Golem" type="CharacterBody2D"]
+script = ExtResource("5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5, 5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -31)
+shape = SubResource("53")
+
+[node name="Attack" type="RayCast2D" parent="."]
+position = Vector2(0, -50)
+target_position = Vector2(150, 0)
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("4")
+
+[node name="Move" type="Node" parent="StateMachine"]
+script = ExtResource("7")
+
+[node name="Attack" type="Node" parent="StateMachine"]
+script = ExtResource("8")
+
+[node name="Timer" type="Timer" parent="StateMachine/Attack"]
+wait_time = 2.25
+one_shot = true
+
+[node name="Die" type="Node" parent="StateMachine"]
+script = ExtResource("6")
+
+[node name="Above_and_Below" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Above_and_Below"]
+position = Vector2(3, -136)
+shape = SubResource("54")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="StateMachine/Attack/Timer" to="StateMachine/Attack" method="_on_Timer_timeout"]
+[connection signal="body_entered" from="Above_and_Below" to="." method="_on_Above_and_Below_body_entered"]
