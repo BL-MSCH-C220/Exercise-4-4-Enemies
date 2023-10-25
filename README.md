@@ -14,11 +14,13 @@ The expectations for this exercise are that you will
  - [ ] Test the game, attacking the enemies using the space bar
  - [ ] Edit the LICENSE and README.md
  - [ ] Commit and push your changes back to GitHub. Turn in the URL of your repository on Canvas.
+
 ---
 
 A demonstration of the exercise is available at [https://youtu.be/nfAeY1uZaGk](https://youtu.be/nfAeY1uZaGk)
 
 ---
+
 ## Instructions
 
 Fork this repository. When that process has completed, make sure that the top of the repository reads [your username]/Exercise-4-4-Enemies. Edit the LICENSE and replace BL-MSCH-C220 with your full name. Commit your changes.
