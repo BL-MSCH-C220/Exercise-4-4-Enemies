@@ -15,7 +15,9 @@ The expectations for this exercise are that you will
  - [ ] Edit the LICENSE and README.md
  - [ ] Commit and push your changes back to GitHub. Turn in the URL of your repository on Canvas.
 ---
+
 A demonstration of the exercise is available at [https://youtu.be/nfAeY1uZaGk](https://youtu.be/nfAeY1uZaGk)
+
 ---
 ## Instructions
 
